@@ -25,7 +25,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          name: jasper-camille-v${{ steps.extract_version.outputs.VERSION }}
           path: ./public
 
       - name: Deploy to GitHub Pages
