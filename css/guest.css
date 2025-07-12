@@ -12,8 +12,13 @@ html {
 }
 
 .font-esthetic {
-    font-family: 'Sacramento', cursive !important;
+    font-family: 'Parisienne', cursive !important;
 }
+
+.font-esthetic-bacasime {
+    font-family: 'Bacasime Antique', cursive !important;
+}
+
 
 .font-arabic {
     font-family: 'Noto Naskh Arabic', serif !important;
