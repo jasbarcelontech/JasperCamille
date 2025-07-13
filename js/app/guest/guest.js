@@ -253,10 +253,10 @@ export const guest = (() => {
         const url = new URL('https://calendar.google.com/calendar/render');
         const data = new URLSearchParams({
             action: 'TEMPLATE',
-            text: 'The Wedding of Wahyu and Riski',
-            dates: `${formatDate('2023-03-15 10:00')}/${formatDate('2023-03-15 11:00')}`,
-            details: 'Tanpa mengurangi rasa hormat, kami mengundang Anda untuk berkenan menghadiri acara pernikahan kami. Terima kasih atas perhatian dan doa restu Anda, yang menjadi kebahagiaan serta kehormatan besar bagi kami.',
-            location: 'RT 10 RW 02, Desa Pajerukan, Kec. Kalibagor, Kab. Banyumas, Jawa Tengah 53191.',
+            text: 'The Wedding of Jasper and Camille',
+            dates: `${formatDate('2025-11-22 14:30')}/${formatDate('2025-11-22 20:00')}`,
+            details: 'With utmost respect, we cordially invite you to grace our wedding celebration. Your kind attention and heartfelt blessings bring us great joy and are a profound honor.',
+            location: 'Mary Mother of the Church Parish, BF Resort Village, CXGV+H2P, Capitoline Hill St, Las Piñas, 1747 Metro Manila, Philippines',
             ctz: config.get('tz'),
         });
 
