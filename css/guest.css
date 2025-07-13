@@ -56,8 +56,8 @@ html[data-bs-theme="light"] .color-theme-svg {
 }
 
 html[data-bs-theme="dark"] .color-theme-svg {
-    color: rgb(0, 0, 0);
-    background-color: var(--bs-dark);
+    color: #4B5320;
+    background-color: #F6EEDF;
 }
 
 html[data-bs-theme="light"] .bg-light-dark {
@@ -65,7 +65,8 @@ html[data-bs-theme="light"] .bg-light-dark {
 }
 
 html[data-bs-theme="dark"] .bg-light-dark {
-    background-color: rgb(var(--bs-dark-rgb));
+    color: #4B5320 !important;
+    background-color: #F6EEDF !important;
 }
 
 html[data-bs-theme="light"] .bg-white-black {
@@ -73,7 +74,7 @@ html[data-bs-theme="light"] .bg-white-black {
 }
 
 html[data-bs-theme="dark"] .bg-white-black {
-    background-color: rgb(var(--bs-black-rgb));
+    background-color: #4B5320;
 }
 
 .bg-cover-home {
