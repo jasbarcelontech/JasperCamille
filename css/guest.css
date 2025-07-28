@@ -145,3 +145,13 @@ svg {
   margin: 0 auto;
   font-size: 0.9rem;
 }
+
+
+.photo-background {
+  width: 100%;
+  height: 400px; /* or any height you need */
+  background-image: url('/assets/images/landing.webp');
+  background-size: cover;       /* Ensures the image fills the div */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+}
