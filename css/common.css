@@ -51,7 +51,7 @@ html[data-bs-theme="light"] .nav-link {
 }
 
 html[data-bs-theme="dark"] .bg-theme-auto {
-    background-color: var(--bs-gray-800);
+    background-color: #4B5320;
 }
 
 html[data-bs-theme="light"] .bg-theme-auto {
