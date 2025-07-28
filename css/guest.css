@@ -136,3 +136,12 @@ svg {
   height: 100%;
   border: none;
 }
+
+.timeline-item p {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  max-width: 220px;  /* Keeps paragraph within container */
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
