@@ -155,3 +155,9 @@ svg {
   background-position: center;  /* Centers the image */
   background-repeat: no-repeat; /* Prevents tiling */
 }
+
+.container-header {
+  display: flex; /* or inline-flex */
+  flex-direction: row;
+  justify-content:center;
+}
