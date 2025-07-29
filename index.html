@@ -244,18 +244,18 @@
                                 <div class="px-3 py-2 rounded bg-light text-center">
                                     <div class="timeline-icon"><i class="fas fa-door-open"></i></div>
                                     <!-- <div class="event-date badge mb-2">2:30 PM</div> -->
+                                    <h5>Church Doors Open</h5>
                                     <h6>2:30 PM</h6>
-                                    <h6>Church Doors Open</h6>
-                                    <!-- <p class="p-1 mb-2" style="font-size: 0.95rem;">Guests are welcome to start arriving and settle in.</p> -->
+                                    <p class="p-1 mb-2" style="font-size: 0.95rem;">Guests are welcome to start arriving and settle in.</p>
                                 </div>
                                 </li>
 
                                 <li class="timeline-item me-3" style="min-width: 250px;">
                                 <div class="px-3 py-2 rounded bg-light text-center">
                                     <div class="timeline-icon"><i class="fas fa-church"></i></div>
+                                    <h5>Ceremony Begins</h5>
                                     <h6>3:00 PM</h6>
-                                    <h6>Ceremony Begins</h6>
-                                    <p class="text-muted">The celebration of love begins at Our Lady of Pillar Parish.</p>
+                                    <p class="p-1 mb-2" style="font-size: 0.95rem;">The celebration of love begins at Our Lady of Pillar Parish.</p>
                                 </div>
                                 </li>
 
@@ -263,18 +263,18 @@
                                 <div class="px-3 py-2 rounded bg-light text-center">
                                     <!-- <div class="timeline-icon"><i class="fas fa-wine-botle"></i></div> -->
                                     <div class="timeline-icon"><i class="fas fa-glass-cheers"></i></div>
+                                    <h5>Reception</h5>
                                     <h6>4:30 PM</h6>
-                                    <h6>Reception</h6>
-                                    <p class="text-muted">Food, laughter, and celebration with family and friends.</p>
+                                    <p class="p-1 mb-2" style="font-size: 0.95rem;">Food, laughter, and celebration with family and friends.</p>
                                 </div>
                                 </li>
 
                                 <li class="timeline-item me-3" style="min-width: 250px;">
                                 <div class="px-3 py-2 rounded bg-light text-center">
                                     <div class="timeline-icon"><i class="fas fa-door-open"></i></div>
-                                    <div class="event-date badge mb-2">7:30 PM</div>
-                                    <h6>Love Lights off</h6>
-                                    <p class="text-muted">A heartfelt thank-you to all who celebrated with us.</p>
+                                    <h5>Love Lights off</h5>
+                                    <h6>7:30 PM</h6>
+                                    <p class="p-1 mb-2" style="font-size: 0.95rem;">A heartfelt thank-you to all who celebrated with us.</p>
                                 </div>
                                 </li>
 
@@ -397,7 +397,13 @@
                 <section class="bg-light-dark pb-3">
                     <!-- RSVP Form -->
                     <div class="container text-center" id="rsvp">
-                        <h2 class="font-esthetic pt-3 mb-4" style="font-size: 3rem;">Rsvp</h2>
+                        <div class="container-header">
+                            <!-- cat huh meme -->
+                            <img src="./assets/cat.gif" class="p-3" style="max-width: 100px; max-height:120px">
+                            <h2 class="font-esthetic p-3 mb-4" style="font-size: 3rem;">Rsvp</h2>
+                            <img src="./assets/cat-yes.gif" class="p-3" style="max-width: 100px; max-height:120px">
+                        </div>
+
                         <div class="iframe-wrapper">
                             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSepdbxJ53WB9ejIPGur6iM9OUaD1zPa7ZKT5iLwbTGlMGeMJA/viewform?embedded=true"
                             width="640" height="1118" frameborder="0" marginheight="0" marginwidth="0" style="border: none; border-radius: 1rem;"
@@ -409,48 +415,6 @@
                 <!-- Comment -->
                 <section class="bg-light-dark my-0 pb-0 pt-3" id="comment">
                     <div class="container">
-                        <!-- <div class="border rounded-5 shadow p-3 mb-2">
-                            <h2 class="font-esthetic text-center mt-2 mb-4" style="font-size: 2.25rem;">Ucapan &amp; Doa</h2>
-
-                            <div class="mb-3">
-                                <label for="form-name" class="form-label my-1"><i class="fa-solid fa-person me-2"></i>Nama</label>
-                                <input type="text" class="form-control shadow-sm rounded-4" id="form-name" minlength="2" maxlength="50" placeholder="Isikan Nama Anda" autocomplete="name" data-offline-disabled="false">
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="form-presence" class="form-label my-1"><i class="fa-solid fa-person-circle-question me-2"></i>Presensi</label>
-                                <select class="form-select shadow-sm rounded-4" id="form-presence" autocomplete="off" data-offline-disabled="false">
-                                    <option value="0" selected>Konfirmasi Presensi</option>
-                                    <option value="1">&#9989; Datang</option>
-                                    <option value="2">&#10060; Berhalangan</option>
-                                </select>
-                            </div>
-
-                            <div class="d-block mb-3" id="comment-form-default">
-                                <div id="information" class="alert alert-info alert-dismissible fade show rounded-4" role="alert">
-                                    <button type="button" class="btn-close rounded-4 p-3" data-bs-dismiss="alert" aria-label="Close" onclick="undangan.guest.closeInformation()"></button>
-
-                                    <p style="font-size: 1.5rem;">Bestieee!!!</p>
-                                    <p class="m-0">Cobain like seperti Instagram, dengan tap tap bagian komentarnya</p>
-                                    <hr class="my-2">
-                                    <p class="m-0">Sama bisa format text seperti Whatsapp lohh... cobainn jugaaa, makaciwww bestieee</p>
-                                </div>
-
-                                <label for="form-comment" class="form-label my-1"><i class="fa-solid fa-comment me-2"></i>Ucapan &amp; Doa</label>
-                                <div class="position-relative">
-                                    <button class="btn btn-secondary btn-sm rounded-4 shadow-sm me-1 my-1 position-absolute bottom-0 end-0" onclick="undangan.comment.gif.open(undangan.comment.gif.default)" aria-label="button gif" data-offline-disabled="false"><i class="fa-solid fa-photo-film"></i></button>
-                                    <textarea class="form-control shadow-sm rounded-4" id="form-comment" rows="4" minlength="1" maxlength="1000" placeholder="Tulis Ucapan dan Doa" autocomplete="off" data-offline-disabled="false"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="d-none mb-3" id="gif-form-default"></div>
-
-                            <div class="d-grid">
-                                <button class="btn btn-primary btn-sm rounded-4 shadow m-1" onclick="undangan.comment.send(this)" data-offline-disabled="false">
-                                    <i class="fa-solid fa-paper-plane me-2"></i>Send
-                                </button>
-                            </div>
-                        </div> -->
 
                         <!-- Comments -->
                         <div class="py-3" id="comments" data-loading="false"></div>
