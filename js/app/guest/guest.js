@@ -10,7 +10,6 @@ import { lang } from '../../common/language.js';
 import { storage } from '../../common/storage.js';
 import { session } from '../../common/session.js';
 import { offline } from '../../common/offline.js';
-import { comment } from '../components/comment.js';
 import * as confetti from '../../libs/confetti.js';
 
 export const guest = (() => {
@@ -320,7 +319,6 @@ export const guest = (() => {
     const domLoaded = () => {
         lang.init();
         offline.init();
-        comment.init();
         progress.init();
 
         config = storage('config');
@@ -341,9 +339,6 @@ export const guest = (() => {
         });
 
         if (!token || token.length <= 0) {
-            document.getElementById('comment')?.remove();
-            document.querySelector('a.nav-link[href="#comment"]')?.closest('li.nav-item')?.remove();
-
             vid.load();
             img.load();
             aud.load();
@@ -374,9 +369,6 @@ export const guest = (() => {
                 aud.load();
                 lib.load({ confetti: data.is_confetti_animation });
 
-                comment.show()
-                    .then(() => progress.complete('comment'))
-                    .catch(() => progress.invalid('comment'));
 
             }).catch(() => progress.invalid('config'));
 
@@ -396,7 +388,6 @@ export const guest = (() => {
             storage('owns').clear();
             storage('likes').clear();
             storage('session').clear();
-            storage('comment').clear();
         }
 
         document.addEventListener('DOMContentLoaded', domLoaded);
@@ -404,7 +395,6 @@ export const guest = (() => {
         return {
             util,
             theme,
-            comment,
             guest: {
                 open,
                 modal,
