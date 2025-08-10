@@ -1,5 +1,17 @@
 @import url("common.css");
 @import url("animation.css");
+@font-face {
+  font-family: 'BrittanySig';
+  src: url('../assets/fonts/BrittanySignature.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Playfair';
+  src: url('../assets/fonts/PlayfairDisplay.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 html {
     scrollbar-width: none !important;
@@ -22,6 +34,14 @@ html {
 
 .font-arabic {
     font-family: 'Noto Naskh Arabic', serif !important;
+}
+
+.font-brittany {
+    font-family: 'BrittanySig', serif !important;
+}
+
+.font-playfair {
+    font-family: 'Playfair', serif !important;
 }
 
 .img-center-crop {
