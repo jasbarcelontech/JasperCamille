@@ -72,6 +72,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/guest.css">
     <link rel="stylesheet" href="./css/timeline.css">
+    <link rel="stylesheet" href="./css/countdown.css">
 
     <!-- Dependencies JS -->
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha256-NfRUfZNkERrKSFA0c1a8VmCplPDYtpTYj5lQmKe1R/o=" crossorigin="anonymous"></script>
@@ -513,23 +514,28 @@
                         <div class="bg-white-black p-2 container-fluid px-0 text-center">
                             <h2 class="font-brittany py-4 m-0" style="font-size: 3rem;">Days until I DO!</h2>
                             <!-- boracay -->
-                            <img src="./assets/images/placeholder.webp" data-src="./assets/images/proposal-walk.webp" alt="bg" class="img-fluid w-100">
+                            <!-- <img src="./assets/images/placeholder.webp" data-src="./assets/images/proposal-walk.webp" alt="bg" class="img-fluid w-100"> -->
+                           
                             <!-- Count Down -->
-                            <div class="font-playfair py-2 px-4 mt-2">
-                                <div class="row justify-content-center">
-                                    <div class="col-3 p-1">
-                                        <p class="d-inline m-0 p-0" style="font-size: 1.25rem;" id="day">0</p><small class="ms-1 me-0 my-0 p-0 d-inline">Days</small>
+                            <div class="main-wrapper font-playfair">
+                                <div class="countdown-grid">
+                                    <div class="countdown-item">
+                                        <div class="countdown-number" id="day">0</div>
+                                        <div class="countdown-label">DAYS</div>
                                     </div>
-                                    <div class="col-3 p-1">
-                                        <p class="d-inline m-0 p-0" style="font-size: 1.25rem;" id="hour">0</p><small class="ms-1 me-0 my-0 p-0 d-inline">Hours</small>
+                                    <div class="countdown-item">
+                                        <div class="countdown-number" id="hour">0</div>
+                                        <div class="countdown-label">HOURS</div>
                                     </div>
-                                    <div class="col-3 p-1">
-                                        <p class="d-inline m-0 p-0" style="font-size: 1.25rem;" id="minute">0</p><small class="ms-1 me-0 my-0 p-0 d-inline">Minutes</small>
+                                    <div class="countdown-item">
+                                        <div class="countdown-number" id="minute">0</div>
+                                        <div class="countdown-label">MINUTES</div>
                                     </div>
-                                    <div class="col-3 p-1">
-                                        <p class="d-inline m-0 p-0" style="font-size: 1.25rem;" id="second">0</p><small class="ms-1 me-0 my-0 p-0 d-inline">Seconds</small>
+                                    <div class="countdown-item">
+                                        <div class="countdown-number" id="second">0</div>
+                                        <div class="countdown-label">SECONDS</div>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                         </div>
 
