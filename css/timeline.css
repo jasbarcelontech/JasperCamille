@@ -9,7 +9,7 @@
 }
 
 .timeline__event {
-  background: #fff;
+  background: var(--secondary-color);
   margin-bottom: 20px;
   position: relative;
   display: flex;
@@ -83,7 +83,7 @@
 }
 
 .timeline__event__title {
-  font-size: 1.2rem;
+  font-size: 0.95rem;
   line-height: 1.4;
   text-transform: uppercase;
   font-weight: 600;
