@@ -71,6 +71,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" integrity="sha256-zRgmWB5PK4CvTx4FiXsxbHaYRBBjz/rvu97sOC7kzXI=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/guest.css">
+    <link rel="stylesheet" href="./css/timeline.css">
 
     <!-- Dependencies JS -->
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha256-NfRUfZNkERrKSFA0c1a8VmCplPDYtpTYj5lQmKe1R/o=" crossorigin="anonymous"></script>
@@ -332,54 +333,66 @@
                         <path fill="currentColor" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
                     </svg>
                 </div>
+
                 <!-- Program timeline -->
-                <div class="bg-white-black font-playfair p-2 text-center" data-aos="fade-down" data-aos-duration="2000">
+                <div class="bg-white-black font-playfair p-2 text-center">
                     <h2 class="font-brittany py-4 m-0" style="font-size: 3rem;">Order of Events</h2>
-                    <div class="timeline-wrapper" style="overflow-x: auto; white-space: nowrap; background-color:#4B5320">
-                        <ul class="timeline-list d-flex flex-row p-0 m-0" style="list-style: none;">          
-                            <li class="timeline-item me-3" style="min-width: 250px;">
-                            <!-- <div class="px-3 py-2 rounded bg-light text-center"> -->
-                            <div class="px-3 py-2 rounded bg-light-dark text-center">
-                                <div class="p-2 timeline-icon"><i class="fas fa-door-open"></i></div>
-                                <!-- <div class="event-date badge mb-2">2:30 PM</div> -->
-                                <h5>Church Doors Open</h5>
-                                <h6>2:30 PM</h6>
-                                <!-- <p class="p-1 mb-2" style="font-size: 0.95rem; font-style: italic;">Guests are welcome to start arriving and settle in.</p> -->
+                    <div class="p-5" >
+                        <div class="timeline__event timeline__event--type1" data-aos="fade-down" data-aos-duration="2000">
+                            <div class="timeline__event__content">
+                                <div class="timeline__event__time">
+                                    2:30 PM
+                                </div>
+                                <div class="timeline__event__title">
+                                    Church Doors Open
+                                </div>
+                                <div class="timeline__event__description">
+                                    <!-- <p>Guests are welcome to start arriving and settle in.</p> -->
+                                </div>
                             </div>
-                            </li>
-
-                            <li class="timeline-item me-3" style="min-width: 250px;">
-                            <!-- <div class="px-3 py-2 rounded bg-light text-center"> -->
-                            <div class="px-3 py-2 rounded bg-light-dark text-center">
-                                <div class="p-2 timeline-icon"><i class="fas fa-church"></i></div>
-                                <h5>Ceremony Begins</h5>
-                                <h6>3:00 PM</h6>
-                                <!-- <p class="p-1 mb-2" style="font-size: 0.95rem;">The celebration of love begins at Our Lady of Pillar Parish.</p> -->
+                        </div>
+                        
+                        <div class="timeline__event timeline__event--type2" data-aos="fade-down" data-aos-duration="2000">
+                            <div class="timeline__event__content">
+                                <div class="timeline__event__time">
+                                    3:00 PM
+                                </div>
+                                <div class="timeline__event__title">
+                                    Wedding Ceremony
+                                </div>
+                                <div class="timeline__event__description">
+                                    <!-- <p>The celebration of love begins at Our Lady of Pillar Parish.</p> -->
+                                </div>
                             </div>
-                            </li>
-
-                            <li class="timeline-item me-3" style="min-width: 250px;">
-                            <!-- <div class="px-3 py-2 rounded bg-light text-center"> -->
-                            <div class="px-3 py-2 rounded bg-light-dark text-center">
-                                <!-- <div class="timeline-icon"><i class="fas fa-wine-botle"></i></div> -->
-                                <div class="p-2 timeline-icon"><i class="fas fa-glass-cheers"></i></div>
-                                <h5>Reception</h5>
-                                <h6>4:30 PM</h6>
-                                <!-- <p class="p-1 mb-2" style="font-size: 0.95rem;">Food, and celebration with family and friends.</p> -->
+                        </div>
+                        
+                        <div class="timeline__event timeline__event--type3" data-aos="fade-down" data-aos-duration="2000">
+                            <div class="timeline__event__content">
+                                <div class="timeline__event__time">
+                                    4:30 PM
+                                </div>
+                                <div class="timeline__event__title">
+                                    Reception
+                                </div>
+                                <div class="timeline__event__description">
+                                    <!-- <p>Join us for dinner and celebration.</p> -->
+                                </div>
                             </div>
-                            </li>
-
-                            <li class="timeline-item me-3" style="min-width: 250px;">
-                            <!-- <div class="px-3 py-2 rounded bg-light text-center"> -->
-                            <div class="px-3 py-2 rounded bg-light-dark text-center">
-                                <div class="p-2 timeline-icon"><i class="fas fa-door-open"></i></div>
-                                <h5>Love Lights off</h5>
-                                <h6>7:30 PM</h6>
-                                <!-- <p class="p-1 mb-2" style="font-size: 0.95rem;">A heartfelt thank-you to all who celebrated with us.</p> -->
+                        </div>
+                        
+                        <div class="timeline__event timeline__event--type4" data-aos="fade-down" data-aos-duration="2000">
+                            <div class="timeline__event__content">
+                                <div class="timeline__event__time">
+                                    7:30 PM
+                                </div>
+                                <div class="timeline__event__title">
+                                    Love Lights Off
+                                </div>
+                                <div class="timeline__event__description">
+                                    <!-- <p>Thank you for celebrating with us!</p> -->
+                                </div>
                             </div>
-                            </li>
-
-                        </ul>
+                        </div>
                     </div>
                 </div>
 

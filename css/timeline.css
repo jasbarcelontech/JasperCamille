@@ -1,0 +1,114 @@
+:root {
+  --primary-color: #4B5320;
+  --secondary-color: #F6EEDF;
+  --bg-color: #fafafa;
+}
+
+.timeline {
+  padding: 50px;
+}
+
+.timeline__event {
+  background: #fff;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3),
+    0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+/* Add these styles for the lines */
+.timeline__event::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: var(--primary-color);
+  position: absolute;
+  top: 52%;
+  left: -3.5rem;
+  z-index: -1;
+}
+
+.timeline__event::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.5rem !important;
+  content: "\f52b"; /* fa-door-open */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 100%;
+  left: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid var(--primary-color);
+  font-size: 2rem;
+}
+
+/* Type specific styles with different icons */
+.timeline__event--type2::before {
+  content: "\f51d"; /* fa-church */
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.timeline__event--type3::before {
+  content: "\f79f"; /* fa-glass-cheers */
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.timeline__event--type4::before {
+  content: "\f52a"; /* fa-door-closed */
+  background: #4B5320;
+  border-color: #4B5320;
+}
+
+/* Remove the old icon container styles */
+.timeline__event__icon {
+  display: none; /* or remove this class entirely from HTML */
+}
+
+.timeline__event__content {
+  padding: 20px;
+  width: 100%;
+}
+
+.timeline__event__title {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--primary-color);
+  letter-spacing: 1.5px;
+}
+
+.timeline__event__time {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Remove line from last event */
+.timeline__event:last-child::after {
+  content: none;
+}
+
+@media (max-width: 786px) {
+  .timeline__event {
+    flex-direction: column;
+  }
+  
+  .timeline__event__icon {
+    border-radius: 8px 8px 0 0;
+  }
+}
