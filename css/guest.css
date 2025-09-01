@@ -12,6 +12,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'BohemeFloral';
+  src: url('../assets/fonts/BohemeFloral.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 html {
     scrollbar-width: none !important;
@@ -42,6 +48,10 @@ html {
 
 .font-playfair {
     font-family: 'Playfair', serif !important;
+}
+
+.font-bohemefloral {
+    font-family: 'BohemeFloral', serif !important;
 }
 
 .img-center-crop {
