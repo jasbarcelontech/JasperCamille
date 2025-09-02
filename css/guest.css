@@ -197,3 +197,19 @@ svg {
     background-color: var(--secondary-color) !important;
     color: var(--primary-color);
 }
+
+.gradient-box {
+    background-image: linear-gradient(to bottom , rgba(246, 238, 223, 0.70), rgba(248, 181, 0, 0));
+    border-radius: 1rem; /* equivalent to rounded-5 */
+    color: #000000;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* Ensure full width and height */
+    width: 100% !important;
+    /* height: 100%; */
+
+    /* Remove margin and spacing artifacts */
+    margin: 0;
+    box-sizing: border-box;
+
+}
