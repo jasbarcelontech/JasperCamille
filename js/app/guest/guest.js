@@ -11,6 +11,7 @@ import { storage } from '../../common/storage.js';
 import { session } from '../../common/session.js';
 import { offline } from '../../common/offline.js';
 import * as confetti from '../../libs/confetti.js';
+import { carousel } from './carousel.js';
 
 export const guest = (() => {
 
@@ -330,6 +331,10 @@ export const guest = (() => {
         const lib = loaderLibs();
         const token = document.body.getAttribute('data-key');
         const params = new URLSearchParams(window.location.search);
+        
+        // Add carousel initialization
+        carousel.loadCarouselImages('carousel-image-one',   'carousel-one');
+        carousel.loadCarouselImages('carousel-image-two', 'carousel-two');
 
         window.addEventListener('resize', util.debounce(slide));
         document.addEventListener('undangan.progress.done', () => booting());
