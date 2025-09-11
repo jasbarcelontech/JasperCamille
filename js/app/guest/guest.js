@@ -315,6 +315,45 @@ export const guest = (() => {
     };
 
     /**
+     * Handle strikethrough for collapse sections
+     * @returns {void}
+     */
+    const handleCollapsible = () => {
+        const collapseTf = document.getElementById('collapseTf');
+        const collapseJB = document.getElementById('collapseJB');
+        const jasperName = document.getElementById('jasper-name')
+        const camilleName = document.getElementById('camille-name');
+
+        if (collapseTf && jasperName && collapseJB && camilleName) {
+            // Handle Camille's section
+            collapseTf.addEventListener('show.bs.collapse', () => {
+                jasperName.style.textDecoration = 'line-through';
+                // Close Jasper's section if open
+                if (collapseJB.classList.contains('show')) {
+                    bootstrap.Collapse.getInstance(collapseJB).hide();
+                }
+            });
+
+            collapseTf.addEventListener('hide.bs.collapse', () => {
+                jasperName.style.textDecoration = 'none';
+            });
+
+            // Handle Jasper's section
+            collapseJB.addEventListener('show.bs.collapse', () => {
+                camilleName.style.textDecoration = 'line-through';
+                // Close Camille's section if open
+                if (collapseTf.classList.contains('show')) {
+                    bootstrap.Collapse.getInstance(collapseTf).hide();
+                }
+            });
+
+            collapseJB.addEventListener('hide.bs.collapse', () => {
+                camilleName.style.textDecoration = 'none';
+            });
+        }
+    };
+
+    /**
      * @returns {void}
      */
     const domLoaded = () => {
@@ -335,6 +374,9 @@ export const guest = (() => {
         // Add carousel initialization
         carousel.loadCarouselImages('carousel-image-one',   'carousel-one');
         carousel.loadCarouselImages('carousel-image-two', 'carousel-two');
+        
+        //
+        handleCollapsible();
 
         window.addEventListener('resize', util.debounce(slide));
         document.addEventListener('undangan.progress.done', () => booting());
